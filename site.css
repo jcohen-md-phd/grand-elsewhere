@@ -23,3 +23,8 @@ body.ge-map .mapcard{border-radius:16px;overflow:hidden}body.ge-map #search{bord
 @media(max-width:560px){.ge-route-strip{font-size:8px;padding:9px 15px;letter-spacing:.08em}.ge-next a{padding:20px}.ge-next strong{font-size:22px}.ge-main-nav{padding:9px 14px}.ge-intro-note{margin:24px 16px;padding:17px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 body.ge-manifest article.person[hidden]{display:none!important}
+
+/* Remove out-of-character visual deck introduction */
+.ge-experiences .section:has(.intro-grid) {
+    display: none !important;
+}
