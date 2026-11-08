@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>GM Dashboard — The Grand Elsewhere</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#10141e;--panel:#191f2b;--line:#394052;--cream:#f7e8d3;--muted:#b8bbc7;--pink:#ff8eb9;--gold:#edce86;--mint:#98e8ce}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#25304c,transparent 40%),var(--bg);color:var(--cream);font:15px 'DM Sans',sans-serif}
+a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}button,input,textarea{font:inherit}button{cursor:pointer}
+header{border-bottom:1px solid var(--line);padding:18px max(20px,calc((100vw - 1200px)/2));display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#121823;position:sticky;top:0;z-index:5}
+.brand{font:700 19px 'Space Grotesk';letter-spacing:.09em}.links{display:flex;gap:19px;align-items:center;flex-wrap:wrap;font-size:13px}
+.tag{background:#533743;color:#ffc0d5;padding:7px 10px;border:1px solid #966277;border-radius:30px;font-size:11px;font-weight:700;letter-spacing:.1em}
+main{max-width:1210px;margin:auto;padding:42px 22px 85px}.eyebrow{color:var(--pink);letter-spacing:.18em;font-size:11px;font-weight:700;text-transform:uppercase}
+h1{font:700 clamp(37px,6vw,70px)/1 'Space Grotesk';letter-spacing:-.06em;margin:12px 0}h1 em{font-style:normal;color:var(--pink)}h2{font:700 24px 'Space Grotesk';margin:8px 0 16px}p{line-height:1.65;color:var(--muted)}.lede{max-width:830px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:17px}
+.panel,.location{border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#22283a,#171c28 70%);padding:24px}.panel h2{margin:7px 0 6px}.panel p{margin:0 0 20px}.link-section{margin-top:30px}.link-section h2{margin:0 0 14px;font-size:24px}.link-section .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr))}.placeholder{display:inline-block;background:#232835;border:1px dashed #596077;border-radius:9px;padding:11px 15px;color:var(--muted);font-weight:700;cursor:not-allowed}.panel .eyebrow{margin-bottom:8px}
+.action{display:inline-block;background:#30354b;border:1px solid #62637a;border-radius:9px;padding:11px 15px;font-weight:700;color:var(--cream)}.action:hover{background:#45435e;text-decoration:none}
+section{margin-top:32px}.textarea{width:100%;min-height:260px;resize:vertical;background:#0d1420;color:var(--cream);border:1px solid #485166;border-radius:12px;padding:18px;line-height:1.65;outline-color:var(--mint)}.smallarea{min-height:115px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.btn{border:1px solid #59627a;border-radius:9px;background:#273043;color:var(--cream);padding:10px 13px}.btn:hover{border-color:var(--pink)}.meta{font-size:12px;color:var(--muted)}.divider{border-top:1px solid var(--line);margin:26px 0}.helper{color:var(--gold);font-size:12px}.search{width:100%;max-width:440px;border-radius:11px;background:#171f2b;color:var(--cream);border:1px solid var(--line);padding:13px 16px}.locgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:15px}.location h2{font-size:23px}.location h3{font-size:11px;letter-spacing:.15em;color:var(--mint);margin:20px 0 5px;text-transform:uppercase}.location p{margin:5px 0 12px;font-size:13px}.pill{font-size:10px;letter-spacing:.12em;color:var(--gold);font-weight:700}.location details{border-top:1px solid var(--line);margin-top:17px;padding-top:12px}.location summary{cursor:pointer;color:var(--pink);font-weight:700}.location textarea{width:100%;min-height:83px;background:#0e1420;color:var(--cream);border:1px solid #485166;border-radius:9px;padding:11px;margin-top:12px}.footer{margin-top:45px;font-size:12px;color:var(--muted)}
+@media(max-width:600px){header{position:relative}}
+</style>
+</head>
+<body>
+<header><div class="brand">✳ THE GRAND ELSEWHERE</div><nav class="links" aria-label="Site navigation"><a href="gm-dash.html">GM Dashboard</a><a href="#general">General</a><a href="#shrimp">Shrimp Game</a><a href="#stowaway">The Stowaway</a><span class="tag">WARDEN EYES ONLY</span></nav></header>
+<main>
+<div class="eyebrow">Perpetual Leisure™ / Restricted Operations / Game Master</div>
+<h1>WARDEN <em>CONTROL.</em></h1>
+<p class="lede">The universe is ending, but your administrative privileges remain active.<br>Your GM landing page for both adventures aboard The Grand Elsewhere.</p>
+<section class="link-section" id="general" aria-labelledby="general-heading"><div class="eyebrow">Shipwide resources</div><h2 id="general-heading">General Links</h2><div class="grid">
+<article class="panel"><div class="eyebrow">Player-facing</div><h2>Player Website</h2><p>The public invitation, experiences, ship map, and passenger manifest.</p><a class="action" href="index.html">Open Player Website ↗</a></article>
+<article class="panel"><div class="eyebrow">Warden reference</div><h2>Location Guide</h2><p>Ship areas, atmosphere, secrets, clues, and editable location notes.</p><a class="action" href="gm-locations.html">Open Location Guide ↗</a></article>
+</div></section>
+<section class="link-section" id="shrimp" aria-labelledby="shrimp-heading"><div class="eyebrow">Adventure 01 / Pelagian infestation</div><h2 id="shrimp-heading">Shrimp Game Links</h2><div class="grid">
+<article class="panel"><div class="eyebrow">Acts &amp; escalation</div><h2>Shrimp Story Console</h2><p>Run Acts I–III, track the infestation and Sterilization Cascade, and roll shrimp encounters.</p><a class="action" href="shrimp_story_console.html">Open Shrimp Story Console ↗</a></article>
+<article class="panel"><div class="eyebrow">Personnel &amp; creatures</div><h2>Shrimp NPC Console</h2><p>Prequel crew, passengers, and Pelagian creatures; health, wounds, and encounter tracking.</p><a class="action" href="shrimp_npc_console.html">Open Shrimp NPC Console ↗</a></article>
+</div></section>
+<section class="link-section" id="stowaway" aria-labelledby="stowaway-heading"><div class="eyebrow">Adventure 02 / Dissolution Spa</div><h2 id="stowaway-heading">The Stowaway</h2><div class="grid">
+<article class="panel"><div class="eyebrow">Story operations</div><h2>Stowaway Story Console</h2><p>Planned home for the Dissolution Spa mystery, clues, objectives, and escalation.</p><span class="placeholder" aria-label="Stowaway Story Console coming soon">Coming soon</span></article>
+<article class="panel"><div class="eyebrow">Original voyage dossiers</div><h2>Stowaway NPC Console</h2><p>Original game NPCs, including Dr. Vey, the Fontaine and Vex families, and the crew.</p><a class="action" href="grand_elsewhere_gm.html">Open Stowaway NPC Console ↗</a></article>
+</div></section>
+<section class="panel"><div class="eyebrow">Live Session / Autosaved on this device</div><h2>Session notes</h2><p>Use this as your scratchpad during play.<br>Notes save automatically in this browser on this device; they are not uploaded to GitHub and will not sync to another device.</p><textarea class="textarea" id="notes" placeholder="Session notes, events, decisions, NPC interactions…"></textarea><div class="row" style="margin-top:13px"><span id="status" class="meta" aria-live="polite">Ready to take notes</span><button class="btn" id="export">Export dashboard notes</button><button class="btn" id="import">Import dashboard notes</button><input id="file" type="file" accept="application/json,.json" hidden><button class="btn" id="clear">Clear notes</button></div></section>
+<section class="grid"><article class="panel"><div class="eyebrow">Encounter state</div><h2>Active questions &amp; clues</h2><textarea class="textarea smallarea" id="clues" placeholder="Open mysteries, revealed clues, unresolved leads…"></textarea></article><article class="panel"><div class="eyebrow">Game clock</div><h2>Escalation &amp; timeline</h2><textarea class="textarea smallarea" id="timeline" placeholder="T+00:00 — Record the opening event, developments, and countdowns…"></textarea></article></section>
+<p class="footer">UNLISTED ≠ PRIVATE. These pages have no links from the player site, but can be viewed by anyone who discovers their URLs or the public GitHub repository. Export your notes to back them up.<br>NPC tracker data and location notes have separate exports on their respective pages.</p>
+</main>
+<script>
+const K='grand_elsewhere_dashboard_v1';let d={};try{d=JSON.parse(localStorage.getItem(K)||'{}')}catch{};
+const ids=['notes','clues','timeline'];for(const id of ids){const el=document.getElementById(id);el.value=d[id]||'';el.addEventListener('input',()=>{d[id]=el.value;try{localStorage.setItem(K,JSON.stringify(d));document.getElementById('status').textContent='Saved locally ✓'}catch{document.getElementById('status').textContent='Save failed — export your notes'}})}
+document.getElementById('export').onclick=()=>{const a=document.createElement('a'),u=URL.createObjectURL(new Blob([JSON.stringify({version:1,sections:d},null,2)],{type:'application/json'}));a.href=u;a.download='grand-elsewhere-dashboard-notes.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1500)};
+document.getElementById('import').onclick=()=>document.getElementById('file').click();document.getElementById('file').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const obj=JSON.parse(await f.text());if(!obj.sections||typeof obj.sections!=='object')throw Error('Invalid notes file');if(!confirm('Replace the dashboard notes on this device with the imported notes?'))return;d={};for(const id of ids){d[id]=String(obj.sections[id]||'');document.getElementById(id).value=d[id]}localStorage.setItem(K,JSON.stringify(d));document.getElementById('status').textContent='Notes imported'}catch(err){alert('Import failed: '+err.message)}e.target.value=''};
+document.getElementById('clear').onclick=()=>{if(confirm('Permanently clear all three dashboard note fields on this device?')){d={};for(const id of ids)document.getElementById(id).value='';localStorage.removeItem(K);document.getElementById('status').textContent='Notes cleared'}};
+</script>
+</body></html>
